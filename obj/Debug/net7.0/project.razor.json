@@ -13,154 +13,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 765227835,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.Pages.FetchData",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.Pages.FetchData",
-          "Common.TypeNamespace": "PrimerParcial.Pages",
-          "Common.TypeNameIdentifier": "FetchData"
-        }
-      },
-      {
-        "HashCode": 1990567392,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.Pages.FetchData",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrimerParcial.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.Pages.FetchData",
-          "Common.TypeNamespace": "PrimerParcial.Pages",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1813742678,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.Pages.Index",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.Pages.Index",
-          "Common.TypeNamespace": "PrimerParcial.Pages",
-          "Common.TypeNameIdentifier": "Index"
-        }
-      },
-      {
-        "HashCode": 783159727,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.Pages.Index",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrimerParcial.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.Pages.Index",
-          "Common.TypeNamespace": "PrimerParcial.Pages",
-          "Common.TypeNameIdentifier": "Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1788294912,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.Pages.Counter",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.Pages.Counter",
-          "Common.TypeNamespace": "PrimerParcial.Pages",
-          "Common.TypeNameIdentifier": "Counter"
-        }
-      },
-      {
-        "HashCode": 1210079472,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.Pages.Counter",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrimerParcial.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.Pages.Counter",
-          "Common.TypeNamespace": "PrimerParcial.Pages",
-          "Common.TypeNameIdentifier": "Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1258798297,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.Pages.Registros.R_Libros",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "R_Libros"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.Pages.Registros.R_Libros",
-          "Common.TypeNamespace": "PrimerParcial.Pages.Registros",
-          "Common.TypeNameIdentifier": "R_Libros"
-        }
-      },
-      {
-        "HashCode": 306675671,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.Pages.Registros.R_Libros",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrimerParcial.Pages.Registros.R_Libros"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.Pages.Registros.R_Libros",
-          "Common.TypeNamespace": "PrimerParcial.Pages.Registros",
-          "Common.TypeNameIdentifier": "R_Libros",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -357196498,
         "Kind": "Components.Component",
         "Name": "PrimerParcial.App",
@@ -396,6 +248,80 @@
           "Common.TypeName": "PrimerParcial.Shared.NavMenu",
           "Common.TypeNamespace": "PrimerParcial.Shared",
           "Common.TypeNameIdentifier": "NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1813742678,
+        "Kind": "Components.Component",
+        "Name": "PrimerParcial.Pages.Index",
+        "AssemblyName": "PrimerParcial",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrimerParcial.Pages.Index",
+          "Common.TypeNamespace": "PrimerParcial.Pages",
+          "Common.TypeNameIdentifier": "Index"
+        }
+      },
+      {
+        "HashCode": 783159727,
+        "Kind": "Components.Component",
+        "Name": "PrimerParcial.Pages.Index",
+        "AssemblyName": "PrimerParcial",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PrimerParcial.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrimerParcial.Pages.Index",
+          "Common.TypeNamespace": "PrimerParcial.Pages",
+          "Common.TypeNameIdentifier": "Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1258798297,
+        "Kind": "Components.Component",
+        "Name": "PrimerParcial.Pages.Registros.R_Libros",
+        "AssemblyName": "PrimerParcial",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "R_Libros"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrimerParcial.Pages.Registros.R_Libros",
+          "Common.TypeNamespace": "PrimerParcial.Pages.Registros",
+          "Common.TypeNameIdentifier": "R_Libros"
+        }
+      },
+      {
+        "HashCode": 306675671,
+        "Kind": "Components.Component",
+        "Name": "PrimerParcial.Pages.Registros.R_Libros",
+        "AssemblyName": "PrimerParcial",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PrimerParcial.Pages.Registros.R_Libros"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrimerParcial.Pages.Registros.R_Libros",
+          "Common.TypeNamespace": "PrimerParcial.Pages.Registros",
+          "Common.TypeNameIdentifier": "R_Libros",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -19052,11 +18978,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\galve\\OneDrive\\TAREAS\\PROGRAMACION APLICADA\\PrimerParcial\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "c:\\Users\\galve\\OneDrive\\TAREAS\\PROGRAMACION APLICADA\\PrimerParcial\\Pages\\Registros\\R_Libros.razor",
       "TargetPath": "Pages\\Registros\\R_Libros.razor",
       "FileKind": "component"
@@ -19080,11 +19001,6 @@
       "FilePath": "c:\\Users\\galve\\OneDrive\\TAREAS\\PROGRAMACION APLICADA\\PrimerParcial\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\galve\\OneDrive\\TAREAS\\PROGRAMACION APLICADA\\PrimerParcial\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.3"

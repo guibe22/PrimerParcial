@@ -1,18 +1,64 @@
-﻿@page "/counter"
+﻿@page "/R_Libros"
 
-<PageTitle>Counter</PageTitle>
 
-<h1>Counter</h1>
+<EditForm Model="libro" OnInvalidSubmit="Guardar" >
 
-<p role="status">Current count: @currentCount</p>
+    <div class= "card text-primary">
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+     <div class="card-header text-center ">
+        <h1>Registro de Libros</h1>
+     </div>
+
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-3">
+                <label for="txtLibroId" class="form-label"> Libro Id:</label>
+                <input type="number"  id="txtLibroId" class="form-control" >
+            </div>
+
+            <div class="col-2">
+                 <button name="Btn" id="BtnBuscar" class="btn btn-primary mr-2" > Buscar </button>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label for="txtTitulo" class="form-label"> Titulo:</label>
+                <input type="text"  id="txtTitulo" class="form-control" >
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-6">
+                <label for="txtPrecio" class="form-label"> Precio:</label>
+                <input type="number"  id="txtPrecio" class="form-control" >
+            </div>
+        </div>
+
+     </div>
+
+     
+
+    <div class="card-footer text-center">
+         <button  id="BtnNuevo" class="btn btn-primary mr-2" > Nuevo </button>
+         <button  id="BtnGuardar" class="btn btn-success mr-2" > Guardar </button>
+         <button  id="BtnEliminar" class="btn btn-danger mr-2" > Eliminar </button>
+     </div>
+
+</div>
+
+</EditForm>
+
 
 @code {
-    private int currentCount = 0;
+    public int LibroId {get; set;}
+    public Libros libro{get; set;} = new Libros();
 
-    private void IncrementCount()
-    {
-        currentCount++;
+    void Guardar(){
+
     }
+
+    
 }
