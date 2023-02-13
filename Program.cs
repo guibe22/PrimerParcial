@@ -14,6 +14,7 @@ var app = builder.Build();
 
 var ConStr =builder.Configuration.GetConnectionString("ConStr");
 builder.Services.AddDbContext<Contexto>(options=>options.UseSqlite(@"Data Source = Data\Biblioteca.db"));
+builder.Services.AddScoped<LibrosBLL>();
 
 // Configure the HTTP request pipeline.c
 if (!app.Environment.IsDevelopment())
