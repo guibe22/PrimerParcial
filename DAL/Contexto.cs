@@ -1,11 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-public class Contexto:DbContext
+public class Contexto : DbContext
 {
     public DbSet<Libros> Libros { get; set; }
+ 
 
-    public Contexto( DbContextOptions<Contexto> option) :base(option)
-    {
-        
-    }
-    
+    public Contexto(DbContextOptions<Contexto> options) : base(options) { }
+
 }

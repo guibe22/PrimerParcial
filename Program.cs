@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using PrimerParcial.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,10 @@ builder.Services.AddSingleton<WeatherForecastService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+var ConStr =builder.Configuration.GetConnectionString("ConStr");
+builder.Services.AddDbContext<Contexto>(options=>options.UseSqlite(@"Data Source = Data\Biblioteca.db"));
+
+// Configure the HTTP request pipeline.c
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
