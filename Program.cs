@@ -10,11 +10,13 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
-var app = builder.Build();
-
 var ConStr =builder.Configuration.GetConnectionString("ConStr");
 builder.Services.AddDbContext<Contexto>(options=>options.UseSqlite(@"Data Source = Data\Biblioteca.db"));
 builder.Services.AddScoped<LibrosBLL>();
+
+var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.c
 if (!app.Environment.IsDevelopment())
