@@ -1,4 +1,5 @@
 ﻿@page "/R_Libros"
+@page "/R_Libros/{LibroId:int}"
 @inject LibrosBLL LibrosBLL
 
 
@@ -16,12 +17,21 @@
             <div class="col-3">
                 <label for="txtLibroId" class="form-label"> Libro Id:</label>
                 <input type="number"  id="txtLibroId" class="form-control" @bind-value="libro.LibroId" >
+
+                
+
             </div>
 
-            <div class="col-2">
-                 <button name="Btn" id="BtnBuscar" class="btn btn-primary mr-2"  @onclick="Buscar"> Buscar </button>
-            </div>
-            
+             <div class="col-3">
+
+                <label for="BtnBuscar" class="form-label"> </label>
+
+            <button name="Btn" id="BtnBuscar" class="btn btn-primary mr-3"  @onclick="Buscar">
+                        <span class="oi oi-magnifying-glass"></span>
+                </button>
+
+             </div>
+                
         </div>
 
         <div class="row">
@@ -34,7 +44,7 @@
          <div class="row">
             <div class="col-6">
                 <label for="txtPrecio" class="form-label"> Precio:</label>
-                <input type="number"  id="txtPrecio" class="form-control"  @bind-value="libro.Precio" >
+                <input type="num"  id="txtPrecio" class="form-control"  @bind-value="libro.Precio" >
             </div>
         </div>
 
@@ -45,7 +55,7 @@
     <div class="card-footer text-center">
          <button  id="BtnNuevo" class="btn btn-primary mr-2" @onclick="Nuevo"> Nuevo </button>
          <button  id="BtnGuardar" class="btn btn-success mr-2 " @onclick="Guardar" > Guardar </button>
-         <button  id="BtnEliminar" class="btn btn-danger mr-2" > Eliminar </button>
+         <button  id="BtnEliminar" class="btn btn-danger mr-2" @onclick="Eliminar" > Eliminar </button>
      </div>
 
 </div>
@@ -54,8 +64,19 @@
 
 
 @code {
+    [Parameter]
     public int LibroId {get; set;}
     public Libros libro{get; set;} = new Libros();
+
+
+    protected override void OnInitialized()
+    {
+        if(LibroId>0){
+            this.libro.LibroId = LibroId;
+            Buscar();
+
+        }
+    }
 
    bool Validar(){
         bool condicion= true;
@@ -88,5 +109,10 @@
         }
     }
 
+    void Eliminar(){
+        if(LibrosBLL.Eliminar(libro)){
+            this.Nuevo();
+        }
+    }
     
 }

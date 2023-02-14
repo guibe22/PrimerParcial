@@ -1,0 +1,48 @@
+﻿@page "/C_Libros"
+
+@inject LibrosBLL LibrosBLL
+
+<div class= "card text-primary">
+
+     <div class="card-header text-center ">
+
+        <h1> Consulta de Libros</h1>
+
+     </div>
+
+    <div class="card-body">
+
+
+        <table class="table">
+            <thead>
+                 <tr>
+                       <th>Libro Id</th>
+                       <th>Titulo</th>
+                       <th>Precio</th>
+                       <th></th>
+
+                 </tr>
+            </thead>
+             <tbody>
+                  @foreach (var libro in LibrosBLL.GetList(o=> true))
+                 { 
+                     <tr>
+                          <td>@libro.LibroId</td> 
+                          <td>@libro.Titulo</td>
+                          <td>@libro.Precio</td>
+                          <td><a href="R_Libros/@libro.LibroId">Ver</a></td>
+                     </tr>
+                 }
+             </tbody>
+        </table>
+
+      
+     </div>
+
+    <div class="card-footer">
+     </div>
+
+</div>
+
+
+

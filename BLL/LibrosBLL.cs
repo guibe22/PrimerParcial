@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 public class LibrosBLL
 {
@@ -32,6 +33,15 @@ public class LibrosBLL
 
     public Libros? Buscar(int LibroId){
          return _Contexto.Libros.Where(o => o.LibroId== LibroId).AsTracking().SingleOrDefault();
+    }
+
+     public bool Eliminar (Libros libro){
+           _Contexto.Entry(libro).State = EntityState.Deleted;
+      return _Contexto.SaveChanges() >0;
+    }
+
+    public List<Libros> GetList(Expression<Func<Libros,bool>>criterio){
+           return _Contexto.Libros.AsNoTracking().Where(criterio).ToList();
     }
 
 
